@@ -103,11 +103,27 @@ source .venv/bin/activate  # On macOS/Linux
 
 ### Step 3: Install Dependencies
 
+Option A - Recommended: Use the pinned `requirements.txt` file
+
+```bash
+pip install -r requirements.txt
+```
+
+Option B - Install packages manually (if you prefer)
+
 ```bash
 pip install flask flask-cors requests beautifulsoup4 pandas
 ```
 
+If you update or add dependencies while developing, regenerate `requirements.txt`:
+
+```bash
+pip freeze > requirements.txt
+```
+
 ### Required Packages
+
+The exact versions used by this project are pinned in `requirements.txt`. Installing from that file is recommended to ensure compatibility.
 
 - **Flask** (2.0+): Web framework for the backend server
 - **Flask-CORS**: Enables Cross-Origin Resource Sharing
@@ -199,10 +215,11 @@ Change `host='0.0.0.0'` to `host='127.0.0.1'`
 ```
 keyfinder/
 ├── main.py                 # Flask application and core logic
-├── noise.txt              # Noise words configuration file
+├── noise.txt               # Noise words configuration file
 ├── templates/
-│   └── index.html         # Web interface
-├── README.md              # This documentation
+│   └── index.html          # Web interface
+├── requirements.txt        # Pinned Python dependencies
+├── README.md               # This documentation
 ```
 
 ### Application Components
