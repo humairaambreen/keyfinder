@@ -690,3 +690,10 @@ For issues, questions, or suggestions:
 ---
 
 **Key Finder** - Discover what skills and keywords matter most in your target job market.
+
+---
+
+## License
+
+This project is licensed under the GNU General Public License v3.0 (GPL-3.0).
+
